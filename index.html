@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScoutSage | Smart Book Scouting for Amazon Sellers</title>
+  <meta name="description" content="ScoutSage helps Amazon booksellers instantly analyze used books in bookstores to find profitable deals. Scan ISBNs, calculate profit, and source smarter." />
+
+  <style>
+    :root {
+      --primary: #0f2a44;
+      --accent: #1e88e5;
+      --dark: #111;
+      --light: #f5f7fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: #fff;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1rem 0;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary), #163a5f);
+      color: #fff;
+      padding: 5rem 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.6rem;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 4rem 0;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      padding: 1.5rem;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .alt {
+      background: var(--light);
+    }
+
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <h2>ScoutSage</h2>
+    <div>
+      <a href="#features">Features</a>
+      <a href="#how">How It Works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#download">Download</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Scan Smarter. Source Better. Profit More.</h1>
+    <p>The intelligent scouting app built for Amazon booksellers.</p>
+    <a href="#download" class="btn">Get Early Access</a>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="container">
+    <h2>Powerful Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Instant ISBN Scanning</h3>
+        <p>Quick barcode scanning to retrieve live Amazon data instantly.</p>
+      </div>
+      <div class="card">
+        <h3>Real-Time Profit Calculator</h3>
+        <p>See estimated profit after fees, shipping, and buy cost.</p>
+      </div>
+      <div class="card">
+        <h3>Sales Rank Insights</h3>
+        <p>Analyze sales rank and demand trends before you buy.</p>
+      </div>
+      <div class="card">
+        <h3>Smart Buy Alerts</h3>
+        <p>Set profit thresholds and let ScoutSage decide instantly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section alt">
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>1. Scan</h3>
+        <p>Scan the book's ISBN barcode in-store.</p>
+      </div>
+      <div class="card">
+        <h3>2. Analyze</h3>
+        <p>Instantly view price, fees, rank, and profit potential.</p>
+      </div>
+      <div class="card">
+        <h3>3. Decide</h3>
+        <p>Buy with confidence using smart sourcing insights.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="section">
+  <div class="container">
+    <h2>Simple Pricing</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Starter</h3>
+        <p>$29/month</p>
+        <p>Basic scanning & profit analysis</p>
+      </div>
+      <div class="card">
+        <h3>Pro</h3>
+        <p>$49/month</p>
+        <p>Advanced analytics & smart buy alerts</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="section alt">
+  <div class="container" style="text-align:center;">
+    <h2>Start Scouting Smarter Today</h2>
+    <p>Available on iOS & Android.</p>
+    <a href="#" class="btn">Download Now</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© <span id="year"></span> ScoutSage. A product of mSquare Solutions.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
